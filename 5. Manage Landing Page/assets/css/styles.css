@@ -48,7 +48,11 @@ body{
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            filter: drop-shadow(0px 2px 2px hsl(12, 88%, 59%));
+        }
+
+        .btn-get-started:hover{
+            filter: drop-shadow(0px 1px 1px hsl(12, 88%, 59%));
+            transition: 0.1s;
         }
 
         /* Btn Menu Responsive */
@@ -76,14 +80,17 @@ body{
             color: hsl(228, 39%, 23%);
         }
 
+        .item-nav-menu img{
+            display: none;
+        }
+            
         .item-nav-menu a{
             text-decoration: none;
             color: hsl(228, 39%, 23%);
-        }
+        } 
 
         .item-nav-menu a:hover{
-            color: hsl(227, 12%, 61%);
-            transition: 0.3s;
+            color: gray;
         }
     
 /* Content */
@@ -188,14 +195,15 @@ body{
             margin-top: 50rem;
             justify-content: start;
             align-items: start;
-            margin-left: 14.5%;
-            box-shadow: 2px 4px 4px black;
+            margin-left: 14%;
         }
 
         .item-nav-menu{
             width: 100%;
             margin: 10px 0 0;
             margin: 0 5px 0;
+            align-items: center;
+            font-size: 15px;
         }
 
         .item-nav-menu a{
@@ -204,9 +212,11 @@ body{
             margin: 0;
         }
 
-        .item-nav-menu:hover{
-            width: 100%;
-            background-color: hsl(0, 0%, 98%);
+        .item-nav-menu img{
+            display: flex;
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
         }
     
         .nav-menu-visible{
@@ -250,6 +260,13 @@ body{
         }
     }
 
+    /* 1280px */
+    @media(max-width: 1280px){
+        .sect-management{
+            height: 500px;
+        }
+    }
+
     /* 1024px */
     @media(max-width: 1024px){
         .nav-menu{
@@ -257,7 +274,6 @@ body{
         }
 
         .sect-management{
-            height: 500px;
             margin-top: 2rem;
         }
 
@@ -281,10 +297,70 @@ body{
         }
     }
 
+    /* 900px */
+    @media(max-width: 900px){
+        .sect-management{
+            margin-top: -3rem;
+            height: 400px;
+        }
+
+        .manage-img-content img{
+            height: 70%;
+        }
+
+        .manage-text-content h1{
+            font-size: 28px;
+        }
+
+        .manage-text-content p{
+            width: 80%;
+            font-size: 13px;
+        }
+
+        .btn-manage{
+            margin-top: 2.5rem;
+        }
+
+        .nav-menu{
+            height: calc(60% - 40px);
+            margin-top: 80%;
+            box-shadow: none;
+        }
+
+        .item-nav-menu{
+            font-size: 15px;
+            align-items: center;
+        }
+
+        .item-nav-menu img{
+            display: flex;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    }
+
     /* 768px */
     @media(max-width: 768px){
         .nav-menu{
             width: 35%;
+            margin-left: 12.5%;
+            box-shadow: none;
+            height: calc(90% - 20px);
+            margin-top: 110%;
+            overflow: hidden;
+        }
+        
+        .item-nav-menu{
+            font-size: 17px;
+            align-items: center;
+        }
+
+        .item-nav-menu img{
+            display: flex;
+            width: 22px;
+            height: 22px;
+            margin-right: 8px;
         }
 
         .sect-management{
@@ -332,10 +408,23 @@ body{
         }
 
         .nav-menu{
-            width: 50%;
+            width: 60%;
             margin-left: 12.5%;
-            box-shadow: none;
-            margin-top: 47rem;
+            height: calc(75% - 20px);
+            margin-top: 150%;
+            overflow: hidden;
+        }
+
+        .item-nav-menu{
+            font-size: 16px;
+            align-items: center;
+        }
+
+        .item-nav-menu img{
+            display: flex;
+            width: 17px;
+            height: 17px;
+            margin-right: 8px;
         }
 
         .sect-management{
@@ -373,7 +462,9 @@ body{
         }
 
         .btn-manage{
+            display: block;
             margin-top: 2rem;
+            position: none;
         }
     }
 
