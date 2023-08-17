@@ -95,10 +95,6 @@ p{
             color: hsl(228, 39%, 23%);
         }
 
-        .item-nav-menu a:hover{
-            color: gray;
-        }
-
 /* Content */
 .content{
     display: flex;
@@ -209,6 +205,8 @@ p{
             height: 33.33%;
             flex-direction: column;
             justify-content: space-between;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
         }
 
             /* Container Number and Title */
