@@ -16,6 +16,10 @@
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet" />
 
+  <!-- Bootstrap Styles and Scripts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
   <title>Manage landing page | Index</title>
 </head>
 <body>
@@ -41,7 +45,7 @@
   </header>
   
   <!-- Content -->
-  <section class="content">
+  <section class="content-page">
     <!-- Section Management -->
     <section class="sect-management">
       <div class="manage-text-content">
@@ -142,6 +146,85 @@
               smallest of details. Never lose sight of the bigger picture again.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Section Management stories -->
+    <section class="sect-manage-stories">
+      <!-- Title -->
+      <div class="title-manage-stories">
+        <h2>What they’ve said</h2>
+      </div>
+
+      <!-- Slider Carrousel -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide slider-carrousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active item-carrousel" data-bs-interval="3500">
+            <div class="cont-content-storie-item">
+              <div class="content-storie-item">
+                <img src="images/avatar-ali.png" alt="">
+                <h2>Ali Bravo</h2>
+                <p>  “We have been able to cancel so many other subscriptions since using 
+                  Manage. There is no more cross-channel confusion and everyone is much 
+                  more focused.”</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item item-carrousel" data-bs-interval="4000">
+            <div class="cont-content-storie-item">
+              <div class="content-storie-item">
+                <img src="images/avatar-richard.png" alt="">
+                <h2>Richard Watts</h2>
+                <p>  “Manage allows us to provide structure and process. It keeps us organized 
+                  and focused. I can’t stop recommending them to everyone I talk to!”</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item item-carrousel" data-bs-interval="4000">
+            <div class="cont-content-storie-item">
+              <div class="content-storie-item">
+                <img src="images/avatar-shanai.png" alt="">
+                <h2> Shanai Gough</h2>
+                <p>  “Their software allows us to track, manage and collaborate on our projects 
+                  from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item item-carrousel" data-bs-interval="4000">
+            <div class="cont-content-storie-item">
+              <div class="content-storie-item">
+                <img src="images/avatar-anisha.png" alt="">
+                <h2>Anisha Li</h2>
+                <p>  “Manage has supercharged our team’s workflow. The ability to maintain 
+                  visibility on larger milestones at all times keeps everyone motivated.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Previous Slide -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon btn-action-control mg-next-slide" aria-hidden="true"></span>
+        </button>
+
+        <!-- Next Slide -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon btn-action-control" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- Button -->
+      <div class="start-stories">
+        <button class="btn-get-started btn-start-stories btn-manage">
+          Get Started
+        </button>
       </div>
     </section>
   </section>
