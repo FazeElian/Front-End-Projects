@@ -8,15 +8,11 @@ https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5
 
 
 About the project this is a preview of that in desktop view:
-<video width="320" height="240" controls>
-  <source src="assets/videos/vid-desktop-view.mp4" type="video/mp4">
-</video>
+https://github.com/FazeElian/Front-End-Projects/raw/main/5.%20Manage%20Landing%20Page/assets/videos/vid-desktop-view.mp4
 
 
 And in the mobile view:
-<video width="320" height="240" controls>
-  <source src="assets/videos/vid-mobile-view.mp4" type="video/mp4">
-</video>
+
 
 
 If you want to access to the website you can go to this link:
