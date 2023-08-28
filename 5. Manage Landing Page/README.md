@@ -6,15 +6,6 @@ Here you can find the link of the challenge:
 
 https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5
 
-
-About the project this is a preview of that in desktop view:
-https://github.com/FazeElian/Front-End-Projects/raw/main/5.%20Manage%20Landing%20Page/assets/videos/vid-desktop-view.mp4
-
-
-And in the mobile view:
-
-
-
 If you want to access to the website you can go to this link:
 
 https://manage-landing-page-site.netlify.app
