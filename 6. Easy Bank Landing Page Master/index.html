@@ -2,21 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easybank landing page</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Easybank landing page</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap">
+
+  <!-- Scripts -->
+  <script defer src="assets/js/scripts.js"></script>
 </head>
 <body>
+  <!-- Header -->
+  <header class="header jty-alg-center">
+    <!-- Nav Content -->
+    <nav class="nav-content">
+      <!-- Container Logo -->
+      <div class="cont-logo jty-alg-center">
+        <a href="#">
+          <img src="assets/img/logo.svg" alt="">
+        </a>
+      </div>
 
-  Home
+      <!-- Container Menu List -->
+      <nav class="nav-menu jty-alg-center">
+        <div class="cont-lists">
+          <li class="item-menu-list"><img src="assets/img/icons/home.png" alt=""><a href="#">Home</a></li>
+          <li class="item-menu-list"><img src="assets/img/icons/about.png" alt=""><a href="#">About</a></li>
+          <li class="item-menu-list"><img src="assets/img/icons/contact.png" alt=""><a href="#">Contact</a></li>
+          <li class="item-menu-list"><img src="assets/img/icons/blog.png" alt=""><a href="#">Blog</a></li>
+          <li class="item-menu-list"><img src="assets/img/icons/careers.png" alt=""><a href="#">Careers</a></li>
+        </div>
+      </nav>
+
+      <!-- Container Button Request -->
+      <div class="cont-btn-request jty-alg-center">
+        <button class="btn-request-menu jty-alg-center degraded-color">
+          <a href="#">Request Button</a>
+        </button>
+      </div>
+
+      <!-- Button Menu Icon -->
+      <button class="btn-menu-icon">
+        <img src="assets/img/menu.png" alt="Menu">
+      </button>      
+    </nav>
+  </header>
+
+  <!-- Home
   About
   Contact
   Blog
@@ -96,6 +134,6 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
