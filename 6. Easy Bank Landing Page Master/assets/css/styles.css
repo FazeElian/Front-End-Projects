@@ -176,7 +176,7 @@ p{
                 width: 35%;
                 height: 87%;
                 margin: 1rem 0 30rem; 
-                position: absolute;
+                position: absolute;             
             }
 
     /* Easy Bank Section */
@@ -195,7 +195,7 @@ p{
             height: 20%;
             flex-direction: column;
             justify-content: center;
-            margin-top: 2rem;
+            margin-top: 4rem;
         }
 
             .cont-title-easy h1{
@@ -209,6 +209,7 @@ p{
                 width: 32%;
                 font-size: 14px;
                 color: hsl(233, 8%, 62%);
+                line-height: 1.4rem;
             }
 
         /* Container Easy Cards */
@@ -217,6 +218,8 @@ p{
             width: 85%;
             height: 60%;
             justify-content: space-between;
+            margin-top: 4rem;
+            margin-bottom: -4rem;
         }
 
             /* Card */
@@ -225,7 +228,7 @@ p{
                 width: 25%;
                 height: 100%;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-start;
             }
 
                 .easy-card img{
@@ -252,6 +255,57 @@ p{
         .nav-content{
             width: 90%;
         }
+
+        .sect-banking{
+            height: 650px;
+            padding: 3.5rem 0 0;
+        }
+
+        .cont-generation h1{
+            font-size: 40px;
+        }
+
+        .cont-generation p{
+            font-size: 13px;
+        }
+
+        .btn-request-banking{
+            width: 170px;
+            height: 40px;
+        }
+
+        .btn-request-banking a{
+            font-size: 13px;
+        }
+
+        .cont-img-bank img{
+            width: 37.5%;
+        }
+
+        .sect-easy-bank{
+            height: 580px;
+        }
+
+        .cont-title-easy h1{
+            font-size: 30px;
+        }
+
+        .easy-card h2{
+            font-size: 18px;
+        }
+
+        .easy-card img{
+            width: 70px;
+            height: 70px;
+        }
+
+        .cont-title-easy p, .easy-card p{
+            font-size: 13px;
+        }
+
+        .easy-card p{
+            width: 70%;
+        }
     }
 
     /* @media 1280px */
@@ -276,6 +330,14 @@ p{
         .btn-request-menu a{
             font-size: 13px;
         }
+
+        .cont-img-bank img{
+            width: 42%;
+        }
+
+        .easy-card p{
+            width: 75%;
+        }
     }
 
     /* @media 1024px */
@@ -287,6 +349,7 @@ p{
 
         .cont-logo{
             width: 50%;
+            justify-content: start;
         }
 
         .btn-menu-icon{
@@ -317,16 +380,20 @@ p{
         .nav-menu{
             display: flex;
             width: 40%;
-            flex-direction: column;
             background-color: white;
             position: absolute;
             left: -120%;
             height: calc(100% - 40px);
             overflow-y: auto;
             transition: left 0.6s;
-            margin: 5.5rem 15% 0 ;
+            margin: 5.5rem 7.5% 0 ;
             justify-content: start;
             align-items: start;
+            flex-direction: column;
+        }
+
+        .cont-lists{
+            flex-direction: column;
         }
 
         .item-menu-list{
@@ -356,16 +423,121 @@ p{
         .nav-menu-visible{
             left: 0;
         }
+
+        .sect-banking{
+            height: 600px;
+        }
+
+        .cont-generation h1{
+            font-size: 30px;
+        }
+
+        .cont-generation p{
+            font-size: 11px;
+            line-height: 1.1rem;
+        }
+
+        .btn-request-banking{
+            width: 150px;
+            height: 35px;
+        }
+
+        .btn-request-banking a{
+            font-size: 11px;
+        }
+
+        .cont-img-bank img{
+            width: 47.5%;
+            height: 80%;
+        }
+
+        .sect-easy-bank{
+            height: 550px;
+        }
+
+        .cont-title-easy h1{
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .easy-card h2{
+            font-size: 15px;
+        }
+
+        .easy-card img{
+            width: 65px;
+            height: 65px;
+        }
+
+        .cont-title-easy p, .easy-card p{
+            font-size: 11px;
+        }
+
+        .easy-card p{
+            width: 70%;
+            line-height: 1.1rem;
+        }
     }
 
     /* @media 768px */
     @media(max-width: 768px){
         .nav-content{
-            width: 70%;
+            width: 80%;
         }
 
         .nav-menu{
-            margin: 5.5rem 16% 0 ;
+            margin: 5.5rem 12% 0 ;
+            width: 35%;
+        }
+
+        .sect-banking{
+            width: 80%;
+            flex-direction: column-reverse;
+            height: 1100px;
+        }
+
+        .cont-generation, .cont-img-bank{
+            width: 100%;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cont-img-bank img{
+            width: 77.5%;
+            height: 120%;
+            margin: 7rem 0 0;
+            position: unset;
+        }
+
+        .sect-easy-bank{
+            height: 550px;
+        }
+
+        .cont-title-easy{
+            align-items: center;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .cont-title-easy p{
+            line-height: 1rem;
+        }
+
+        .cont-easy-cards{
+            flex: 25%;
+            margin-top: 3rem;
+            margin-bottom: -3rem;
+        }
+
+        .easy-card{
+            align-items: center;
+            text-align: center;
+        }
+
+        .easy-card p{
+            font-size: 10.5px;
         }
     }
 
@@ -376,11 +548,16 @@ p{
             margin-top: 1rem;
         }
 
-        .nav-menu{
+        .header{
+            margin-top: 0;
             position: fixed;
+        }
+
+        .nav-menu{
+            position: absolute;
             width: 100%;
             height: 100vh;
-            margin: 5rem 0 0;
+            margin: 4rem 0 0;
             align-items: center;
             justify-content: center;
         } 
@@ -403,11 +580,9 @@ p{
         .cont-lists{
             width: 80%;
             height: auto;
-            background-color: hsl(0, 0%, 96%);
             flex-direction: column;
-            margin-top: -25rem;
+            margin-top: -22rem;
             padding: 60px 0 20px;
-            border-radius: 8px;
         }
 
         .btn-menu-icon{
@@ -417,5 +592,53 @@ p{
         .btn-menu-icon img{
             width: 35px;
             height: 30px;
+        }
+
+        .sect-banking{
+            height: 650px;
+        }
+
+        .cont-generation{
+            margin-top: 5rem;
+        }
+
+        .cont-img-bank{
+            background-image: ulr("../img/bg-intro-mobile.svg");
+        }
+
+        .cont-img-bank img{
+            width: 100%;
+            height: 150%;
+            position: unset;
+            margin-top: -4rem;
+        }
+
+        .sect-easy-bank{
+            margin-top: 5rem;
+            height: auto;
+            padding-bottom: 5rem;
+        }
+
+        .cont-title-easy h1{
+            width: 72%;
+        }
+
+        .cont-title-easy p{
+            width: 72%;
+        }
+
+        .cont-easy-cards{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .easy-card{
+            width: 100%;
+            height: 25%;
+            margin-bottom: 2.5rem;
+        }
+
+        .easy-card p{
+            width: 67%;
         }
     }
