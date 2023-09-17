@@ -18,18 +18,24 @@
     background: linear-gradient(90deg, rgba(48,211,92,1) 0%, rgba(42,182,217,1) 100%);
 }
 
+/* Paragraph */
+p{
+    color: hsl(233, 8%, 62%);
+}
+
 /* Header */
 .header{
     display: flex;
     width: 100%;
     height: 80px;
-    margin: 3rem 0 0;
+    background-color: white;
+    margin-top: 3rem;
 }
 
 /* Nav Content */
 .nav-content{
     display: flex;
-    width: 80%;
+    width: 98%;
     height: 100%;
 }
 
@@ -80,8 +86,8 @@
         /* Button */
         .btn-request-menu{
             display: flex;
-            width: 180px;
-            height: 45px;
+            width: 190px;
+            height: 42px;
             border-radius: 6rem;
             border: 0;
             cursor: pointer;
@@ -97,7 +103,149 @@
         display: none;
     }
 
+/* Content Section */
+.content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+}
 
+    /* Banking Section */
+    .sect-banking{
+        display: flex;
+        width: 85%;
+        height: 750px;
+        padding: 5rem 0 0;
+        align-items: center;
+    }
+
+        /* Container Generation */
+        .cont-generation{
+            display: flex;
+            width: 40%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            .cont-generation h1{
+                width: 70%;
+                font-size: 45px;
+                font-weight: 500;
+                margin-bottom: 20px;
+                color: hsl(233, 26%, 24%);
+            }
+
+            .cont-generation p{
+                width: 60%;
+                font-size: 15px;
+                font-weight: lighter;
+                margin-bottom: 30px;
+                line-height: 1.4rem;
+            }
+
+            /* Button */
+            .btn-request-banking{
+                display: flex;
+                width: 180px;
+                height: 42px;
+                border-radius: 6rem;
+                border: 0;
+                cursor: pointer;
+            }
+
+            .btn-request-banking a{
+                font-size: 14px;
+                color: white;
+            }
+        
+        /* Container Image Bank */
+        .cont-img-bank{
+            display: flex;
+            width: 60%;
+            height: 100%;
+            justify-content: end;
+            background-image: url("../img/bg-intro-desktop.svg");
+            background-size: cover;        
+        }
+
+            .cont-img-bank img{
+                display: flex;
+                width: 35%;
+                height: 87%;
+                margin: 1rem 0 30rem; 
+                position: absolute;
+            }
+
+    /* Easy Bank Section */
+    .sect-easy-bank{
+        display: flex;
+        width: 100%;
+        height: 650px;
+        background-color: hsl(0, 0%, 98%);
+        flex-direction: column;
+    }
+
+        /* Container title */
+        .cont-title-easy{
+            display: flex;
+            width: 85%;
+            height: 20%;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+            .cont-title-easy h1{
+                font-size: 35px;
+                font-weight: 500;
+                margin-bottom: 1rem;
+                color: hsl(233, 26%, 24%);
+            }
+
+            .cont-title-easy p{
+                width: 32%;
+                font-size: 14px;
+                color: hsl(233, 8%, 62%);
+            }
+
+        /* Container Easy Cards */
+        .cont-easy-cards{
+            display: flex;
+            width: 85%;
+            height: 60%;
+            justify-content: space-between;
+        }
+
+            /* Card */
+            .easy-card{
+                display: flex;
+                width: 25%;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+                .easy-card img{
+                    display: flex;
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .easy-card h2{
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin: 1.5rem 0 1.5rem;
+                }
+
+                .easy-card p{
+                    font-size: 14px;
+                    width: 58.15%;
+                    line-height: 1.3rem;
+                }
+                    
 /* @media */
     /* @media 1440px */
     @media(max-width: 1440px){
