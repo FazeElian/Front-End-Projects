@@ -156,6 +156,12 @@ p{
                 cursor: pointer;
             }
 
+
+            .btn-request-banking:hover, .btn-request-menu:hover{
+                opacity: .65;
+                transition: 0.3s;
+            }
+
             .btn-request-banking a{
                 font-size: 14px;
                 color: white;
@@ -596,6 +602,10 @@ p{
 
         .sect-banking{
             height: 650px;
+        }
+
+        .btn-request-banking{
+            min-height: 35px;
         }
 
         .cont-generation{
