@@ -254,7 +254,98 @@ p{
                     width: 58.15%;
                     line-height: 1.3rem;
                 }
-                    
+
+/* Latest articles section */
+.sect-articles{
+    display: flex;
+    width: 100%;
+    height: 650px;
+    flex-direction: column;
+}                    
+
+    /* Title */
+    .cont-title-articles{
+        align-items: end;
+        height: 12%;
+    }
+
+        .cont-title-articles h1{
+            font-size: 35px;
+            font-weight: 500;
+            color: hsl(233, 26%, 24%);
+        }
+    
+    /* Container articles */
+    .cont-title-articles, .cont-articles{
+        display: flex;
+        width: 85%;
+    }
+
+    .cont-articles{
+        height: 70%;
+        margin-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+        /* Article */
+        .article{
+            display: flex;
+            width: 320px;
+            min-width: 280px;
+            height: 100%;
+            background-color: gray;
+            border-radius: 5px;
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+
+            /* Img */
+            .cont-img-article{
+                display: flex;
+                width: 100%;
+                height: 50%;
+            }
+
+                .cont-img-article img{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px 5px 0 0;
+                }
+
+            /* Content */
+            .cont-content-article{
+                display: flex;
+                width: 100%;
+                height: 50%;
+                background-color: hsl(0, 0%, 97%);
+            }
+
+            .content-article{
+                display: flex;
+                width: 80%;
+                height: 80%;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .content-article h4{
+                font-size: 10px;
+                font-weight: 300;
+            }
+
+            .content-article h2{
+                font-size: 15px;
+                font-weight: 500;
+                margin: 1rem 0 8px;
+            }
+
+            .content-article p{
+                font-size: 12px;
+            }
+
 /* @media */
     /* @media 1440px */
     @media(max-width: 1440px){
@@ -311,6 +402,22 @@ p{
 
         .easy-card p{
             width: 70%;
+        }
+
+        .sect-articles{
+            height: 800px;
+        }
+        
+        .content-article{
+            width: 75%;
+        }
+
+        .cont-title-articles h1{
+            font-size: 30px;
+        }
+
+        .article{
+            max-height: 420px;
         }
     }
 
@@ -505,6 +612,7 @@ p{
         .easy-card p{
             width: 90%;
         }
+
     }
 
     /* @media 768px */
@@ -566,6 +674,10 @@ p{
 
         .easy-card p{
             font-size: 10.5px;
+        }
+
+        .article{
+            width: 47%;
         }
     }
 
@@ -634,6 +746,10 @@ p{
             margin-top: 5rem;
         }
 
+        .cont-generation h1{
+            width: 100%;
+        }
+
         .cont-img-bank{
             background-image: ulr("../img/bg-intro-mobile.svg");
         }
@@ -672,5 +788,41 @@ p{
 
         .easy-card p{
             width: 67%;
+        }
+
+        .sect-articles{
+            height: auto;
+            margin-top: 8rem;
+        }
+
+        .cont-title-articles, .cont-articles{
+            justify-content: center;
+        }
+
+        .cont-title-articles{
+            margin: -4rem 0 0;
+        }
+
+        .cont-articles{
+            padding-bottom: 2rem;
+            margin: 2rem 0 0;
+        }
+
+        .article{
+            max-width: 20px;
+            max-width: 300px;
+            height: 400px;
+        }
+    }
+
+    /* @media 340px */
+    @media(max-width: 340px){
+        .article{
+            min-width: 270px;
+        }
+
+        .cont-img-bank{
+            width: 105%;
+            height: 40%;
         }
     }
