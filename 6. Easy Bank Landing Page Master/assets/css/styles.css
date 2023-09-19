@@ -485,6 +485,28 @@ p{
         }
     }
 
+    /* @media 900px */
+    @media(max-width: 900px){
+        .cont-generation h1{
+            width: 60%;
+        }
+
+        .cont-generation p{
+            width: 80%;
+        }
+
+        .cont-img-bank img{
+            width: 100%;
+            height: 110%;
+            margin: -3rem 0 0;
+            position: unset;
+        }
+
+        .easy-card p{
+            width: 90%;
+        }
+    }
+
     /* @media 768px */
     @media(max-width: 768px){
         .nav-content{
