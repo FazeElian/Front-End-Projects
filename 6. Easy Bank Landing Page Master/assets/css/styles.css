@@ -70,7 +70,7 @@ p{
             margin: 0 1rem;
             font-size: 16px;
             text-decoration: none;    
-            padding-bottom: 10px;    
+            padding-bottom: 18px;    
         }
 
         .item-menu-list a:hover{
@@ -342,6 +342,15 @@ p{
                 margin: 1rem 0 8px;
             }
 
+            .content-article h2 a{
+                color: black;
+            }
+
+            .content-article h2 a:hover{
+                color: hsl(136, 65%, 51%);
+                transition: 0.3s;
+            }
+
             .content-article p{
                 font-size: 12px;
             }
@@ -391,7 +400,7 @@ p{
                 width: 18px;
                 margin-right: 12px;
             }
-
+              
         /* Containe Nav List */
         .cont-nav-footer{
             width: 35%;
@@ -418,7 +427,6 @@ p{
                 color: hsl(136, 65%, 51%);
                 transition: 0.3s;
             }
-            
 
         /* Container Button */
         .cont-btn-footer{
