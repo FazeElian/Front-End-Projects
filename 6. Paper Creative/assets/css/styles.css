@@ -442,7 +442,7 @@ body{
 /* @media 425px */
 @media(max-width: 425px){
     .nav-menu{
-        width: 50%;
+        width: 65%;
     }
 
     .prod-cards{

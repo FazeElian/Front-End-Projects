@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    margin: 2rem 0 0;
+}
+
+    /* Content */
+    .content-header{
+        display: flex;
+        width: 80%;
+        height: 100%;
+        align-items: center;
+    }
+
+        /* Nav Menu */
+        .nav-menu{
+            display: flex;
+            width: 65%;
+            height: 100%;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-menu a img{
+            height: 50%;
+            margin: 10px 0 0;
+        }
+
+        .nav-menu li a, .nav-user li a{
+            text-decoration: none;
+            margin-left: 3rem;
+            color: hsl(0, 0%, 75%);
+        }
+
+        .nav-menu li a:hover, 
+        .nav-user li a:hover{
+            color: black;
+            transition: 0.3s;
+        }
+
+            /* Item */
+            .item-nav-menu{
+                display: flex;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        
+        /* Nav User */
+        .nav-user{
+            display: flex;
+            width: 35%;
+            height: 100%;
+            align-items: center;
+            justify-content: end;
+        }
+
+            /* Button Sign Up */
+            .btn-sign-up{
+                display: flex;
+                width: 120px;
+                height: 40px;
+                font-size: 14px;
+                background-color: hsl(180, 66%, 49%);
+                border-radius: 1.5rem;
+                align-items: center;
+                justify-content: center;
+                margin-left: 3rem;
+                cursor: pointer;
+                border: none;
+            }
+
+            .btn-sign-up a{
+                color: white;
+                font-size: 14px;
+                text-decoration: none;
+            }
+
+            .btn-sign-up:hover{
+                opacity: 0.7;
+                transition: 0.3s;
+            }
+
+            
