@@ -23,30 +23,35 @@
     <!-- Content -->
     <div class="content-header">
       <!-- Nav Menu -->
-      <nav class="nav-menu">
-        <a href="index.html"><img src="assets/img/logo.svg" alt="Logo"></a>
-        <li class="item-nav-menu"><a href="#">Features</a></li>
-        <li class="item-nav-menu"><a href="#">Pricing</a></li>
-        <li class="item-nav-menu"><a href="#">Resources</a></li>
-      </nav>
+      <a href="index.html"><img src="assets/img/logo.svg" alt="Logo"></a>
 
-      <!-- Nav User -->
-      <nav class="nav-user">
-        <li class="item-nav-menu"><a href="#">Login</a></li>
-        <button class="btn-sign-up">
-          <a href="#">Sign Up</a>
-        </button>
+      <nav class="nav" id="nav">
+        <nav class="nav-menu">
+          <li class="item-nav-menu"><a href="#">Features</a></li>
+          <li class="item-nav-menu"><a href="#">Pricing</a></li>
+          <li class="item-nav-menu"><a href="#">Resources</a></li>
+        </nav>
+  
+        <!-- Nav User -->
+        <nav class="nav-user" id="navUser">
+          <li class="item-nav-menu"><a href="#">Login</a></li>
+          <button class="btn-sign-up">
+            <a href="#">Sign Up</a>
+          </button>
+        </nav>
       </nav>
+      <div class="nav-btn user-nav-btn">
+        <button class="btn-menu" onclick="showNavUser()">
+          <img src="assets/img/menu.png" alt="Menu Icon">
+        </button>
+      </div>
+      <div class="nav-btn nav-header-btn">
+        <button class="btn-menu" onclick="showMenu()">
+          <img src="assets/img/menu.png" alt="Menu Icon">
+        </button>
+      </div>
     </div>
   </header>
-
-  <!-- Sections Links -->
-  <!-- <section class="sect-links"> -->
-    <!-- Content -->
-    <!-- <div class="content-section">
-
-    </div>
-  </section> -->
 
   <!-- Features
   Pricing

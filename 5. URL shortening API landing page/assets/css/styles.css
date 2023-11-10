@@ -14,12 +14,22 @@
     margin: 2rem 0 0;
 }
 
+    .nav{
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
     /* Content */
     .content-header{
         display: flex;
         width: 80%;
         height: 100%;
         align-items: center;
+    }
+
+    .cont-list{
+        display: flex;
     }
 
         /* Nav Menu */
@@ -55,6 +65,10 @@
                 font-weight: 500;
             }
         
+        .nav-btn-sec{
+            display: none;
+        }
+
         /* Nav User */
         .nav-user{
             display: flex;
@@ -62,6 +76,10 @@
             height: 100%;
             align-items: center;
             justify-content: end;
+        }
+
+        .nav-user img{
+            display: none;
         }
 
             /* Button Sign Up */
@@ -90,4 +108,327 @@
                 transition: 0.3s;
             }
 
+        /* Nav Button */
+        .nav-btn{
+            display: none;
+        }
+
+/* @media */
+    /* @media 769px - 1024px */
+    @media (min-width: 769px) and (max-width: 1024px){
+        .header{
+            margin: 3rem 0 0;
+        }
             
+        .nav-menu a img{
+            height: 25px;
+        }
+
+        .item-nav-menu{
+            font-size: 12px;
+        }
+
+        .nav-user li, .btn-sign-up{
+            display: none;
+        }
+
+        .nav-user img{
+            display: flex;
+            width: 35px;
+            height: 35px;
+        }
+
+        .nav-btn{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .btn-menu{
+            display: flex;
+            width: 35px;
+            height: 35px;
+            border: none;
+            cursor: pointer;
+            justify-content: end;
+            background-color: white;
+        }
+
+        .btn-menu img{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        #nav-user{
+            display: none;
+        }
+
+        .nav-user-visible{
+            display: flex;
+            width: 220px;
+            height: 120px;
+            position: absolute;
+            right: 10.2%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 3rem 0 0;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 1.5rem 1px 1.5rem 1px;
+            padding: 0;
+        }
+
+        .nav-user-visible .btn-sign-up,
+        .nav-user-visible li{
+            display: flex;
+            margin: 7px 0 7px;
+            padding: 0;
+        }
+
+        .nav-user-visible li{
+            margin-right: 22.5%;
+            font-size: 14px;
+        }
+
+        .nav-header-btn{
+            display: none;
+        }
+    }
+
+    /* @media 426px - 768px */
+    @media (min-width: 426px) and (max-width: 768px){ 
+        .nav-menu a img{
+            height: 25px;
+        }
+
+        .item-nav-menu{
+            font-size: 12px;
+        }
+
+        .nav-user li, .btn-sign-up, .nav-menu li{
+            display: none;
+        }
+
+        .nav-user img{
+            display: flex;
+            width: 35px;
+            height: 35px;
+        }
+
+        .nav-btn{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .btn-menu{
+            display: flex;
+            width: 35px;
+            height: 35px;
+            border: none;
+            cursor: pointer;
+            justify-content: end;
+            background-color: white;
+            position: absolute;
+            right: 11%;
+        }
+
+        .btn-menu img{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .user-nav-btn{
+            display: none;
+        }
+
+        .nav-header-btn{
+            display: flex;
+        }
+
+        .nav-menu-visible{
+            display: flex;
+            width: 220px;
+            height: 250px;
+            position: absolute;
+            right: 10.2%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 23rem 0 0;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 12px;
+        }
+
+        .nav-menu-visible li{
+            display: flex;
+        }
+
+        .nav-menu-visible button{
+            display: flex;
+            height: 30px;
+            margin: 10px 0 17.5px;
+        }
+
+        .nav-menu{
+            flex-direction: column;
+            width: 100%;
+            height: 55%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-menu li a, .nav-user li a{
+            margin: 0;
+        }
+
+        .item-nav-menu{
+            margin: 7px 0 5px;
+        }
+
+        .nav-user{
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-sign-up a{
+            font-size: 12px;
+        }
+    }
+
+    /* @media 260px - 425px */
+    @media (min-width: 260px) and (max-width: 425px){
+        .content-header{
+            width: 78%;
+        }
+
+        .nav-menu a img{
+            height: 25px;
+        }
+
+        .item-nav-menu{
+            font-size: 12px;
+        }
+
+        .nav-user li, .btn-sign-up, .nav-menu li{
+            display: none;
+        }
+
+        .nav-user img{
+            display: flex;
+            width: 35px;
+            height: 35px;
+        }
+
+        .nav-btn{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .btn-menu{
+            display: flex;
+            width: 35px;
+            height: 35px;
+            border: none;
+            cursor: pointer;
+            justify-content: end;
+            background-color: white;
+            position: absolute;
+            right: 10%;
+        }
+
+        .btn-menu img{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .user-nav-btn{
+            display: none;
+        }
+
+        .nav-header-btn{
+            display: flex;
+        }
+
+        .nav-menu-visible{
+            display: flex;
+            width: 78%;
+            height: 400px;
+            position: absolute;
+            right: 10.5%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 30rem 0 0;
+            background-color: hsl(257, 27%, 26%);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 8px;
+        }
+
+        .nav-menu-visible li{
+            display: flex;
+        }
+
+        .nav-menu-visible button{
+            display: flex;
+            width: 85%;
+            height: 40px;
+            margin: 10px 0 17.5px;
+        }
+
+        .nav-menu{
+            flex-direction: column;
+            width: 100%;
+            height: 55%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-menu li a, .nav-user li a{
+            margin: 0;
+            color: white;
+        }
+
+        .nav-menu li a, .nav-user li a,
+        .btn-sign-up a{
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        .item-nav-menu{
+            margin: 7px 0 5px;
+        }
+
+        .nav-user{
+            flex-direction: column;
+            width: 85%;
+            height: 45%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-sign-up:hover, .nav-menu li a:hover, 
+        .nav-user li a:hover{
+            opacity: 0.8;
+            color: white;
+        }
+
+        .border-nav{
+            border-top: 1px solid hsl(0, 0%, 75%);
+        }
+    }
