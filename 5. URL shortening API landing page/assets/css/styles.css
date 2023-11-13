@@ -11,7 +11,7 @@
     width: 100%;
     height: 70px;
     justify-content: center;
-    margin: 2rem 0 0;
+    margin: 3rem 0 0;
 }
 
     .nav{
@@ -28,6 +28,11 @@
         align-items: center;
     }
 
+    .content-header a img{
+        display: flex;
+        margin: -17.5px 0 0;
+    }
+
     .cont-list{
         display: flex;
     }
@@ -39,11 +44,6 @@
             height: 100%;
             align-items: center;
             list-style: none;
-        }
-
-        .nav-menu a img{
-            height: 50%;
-            margin: 10px 0 0;
         }
 
         .nav-menu li a, .nav-user li a{
@@ -83,7 +83,7 @@
         }
 
             /* Button Sign Up */
-            .btn-sign-up{
+            .btn-sign-up, .btn-brands{
                 display: flex;
                 width: 120px;
                 height: 40px;
@@ -103,7 +103,7 @@
                 text-decoration: none;
             }
 
-            .btn-sign-up:hover{
+            .btn-sign-up:hover, .btn-brands:hover{
                 opacity: 0.7;
                 transition: 0.3s;
             }
@@ -113,13 +113,123 @@
             display: none;
         }
 
+/* Content Page */
+.cont-content, .content-page{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+/* Section brands */
+.sect-brands{
+    display: flex;
+    width: 100%;
+    height: 520px;
+    margin: 2rem 0 0;
+}
+
+    /* Container Brands */
+    .cont-brands-content{
+        display: flex;
+        width: 55%;
+        height: 100%;
+        justify-content: center;
+    }
+
+        /* Content  */
+        .content-brands{
+            display: flex;
+            width: 65%;
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content-brands h1{
+            color: hsl(255, 11%, 22%);
+            font-size: 75px;
+            font-weight: 700;
+            line-height: 5rem;
+        }
+
+        .content-brands p{
+            color: gray;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 5px 0 2rem;
+        }
+
+        /* Button */
+        .btn-brands{
+            display: flex;
+            width: 160px;
+            color: white;
+            margin: 0;
+        }
+
+    .cont-brands-content, .cont-brands-image{
+        display: flex;
+        height: 100%;
+    }
+
+    /* Image */
+    .cont-brands-image{
+        width: 45%;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .cont-brands-image img{
+        width: 800px;
+        position: absolute;
+        right: -3rem;
+    }
+
 /* @media */
-    /* @media 769px - 1024px */
-    @media (min-width: 769px) and (max-width: 1024px){
+    /* @media 1440px */
+    @media (max-width: 1440px){
+        .content-brands h1{
+            font-size: 60px;
+        }
+
+        .content-brands p{
+            width: 80%;
+            font-size: 14px;
+        }
+
+        .cont-brands-image img{
+            width: 720px;
+        }
+    }
+
+    /* @media 1025px - 1280px */
+    @media (max-width: 1280px){
+        .content-brands h1{
+            font-size: 55px;
+            line-height: 4rem;
+        }
+
+        .content-brands p{
+            width: 75%;
+            font-size: 12px;
+        }
+
+        .cont-brands-image img{
+            width: 660px;
+        }
+    }
+
+    /* @media 1024px */
+    @media (max-width: 1024px){
         .header{
             margin: 3rem 0 0;
         }
-            
+           
+        .content-header a img{
+            margin: 0;
+        }
+
         .nav-menu a img{
             height: 25px;
         }
@@ -197,34 +307,72 @@
         .nav-header-btn{
             display: none;
         }
-    }
 
-    /* @media 426px - 768px */
-    @media (min-width: 426px) and (max-width: 768px){ 
-        .nav-menu a img{
-            height: 25px;
+        .sect-brands{
+            margin: 0;
         }
 
-        .item-nav-menu{
+        .content-brands h1{
+            font-size: 40px;
+            line-height: 3rem;
+        }
+
+        .content-brands p{
+            width: 95%;
+            font-size: 10px;
+        }
+
+        .cont-brands-image img{
+            width: 100%;
+            position: unset;
+        }
+
+        .btn-brands{
+            width: 145px;
+            height: 35px ;
+        }
+    }
+
+    /* @media 768px */
+    @media (max-width: 768px){ 
+        .sect-brands{
+            width: 100%;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin: 2rem 0 0;
+            height: 700px;
+        }
+
+        .cont-brands-content{
+            width: 100%;
+            height: 45%;
+        }
+
+        .content-brands{
+            align-items: center;
+            text-align: center;
+        }
+
+        .content-brands h1{
+            width: 90%;
+            margin: 0;
+        }
+
+        .content-brands p{
+            width: 90%;
+            margin: 0.75rem 0 1.5rem;
             font-size: 12px;
         }
 
-        .nav-user li, .btn-sign-up, .nav-menu li{
-            display: none;
+        .cont-brands-image{
+            width: 100%;
+            height: 55%;
+            justify-content: center;
         }
 
-        .nav-user img{
-            display: flex;
-            width: 35px;
-            height: 35px;
-        }
-
-        .nav-btn{
-            display: flex;
-            width: 50%;
-            height: 100%;
-            align-items: center;
-            justify-content: end;
+        .cont-brands-image img{
+            width: 75%;
+            position: unset;
         }
 
         .btn-menu{
@@ -236,7 +384,7 @@
             justify-content: end;
             background-color: white;
             position: absolute;
-            right: 11%;
+            right: 10%;
         }
 
         .btn-menu img{
@@ -255,17 +403,17 @@
 
         .nav-menu-visible{
             display: flex;
-            width: 220px;
-            height: 250px;
+            width: 37%;
+            height: 370px;
             position: absolute;
-            right: 10.2%;
+            right: 10.5%;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 23rem 0 0;
-            background-color: white;
+            margin: 28rem 0 0;
+            background-color: hsl(257, 27%, 26%);
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border-radius: 12px;
+            border-radius: 8px;
         }
 
         .nav-menu-visible li{
@@ -274,7 +422,8 @@
 
         .nav-menu-visible button{
             display: flex;
-            height: 30px;
+            width: 85%;
+            height: 40px;
             margin: 10px 0 17.5px;
         }
 
@@ -288,6 +437,13 @@
 
         .nav-menu li a, .nav-user li a{
             margin: 0;
+            color: white;
+        }
+
+        .nav-menu li a, .nav-user li a,
+        .btn-sign-up a{
+            font-weight: 700;
+            font-size: 14px;
         }
 
         .item-nav-menu{
@@ -296,19 +452,25 @@
 
         .nav-user{
             flex-direction: column;
-            width: 100%;
-            height: auto;
+            width: 85%;
+            height: 45%;
             justify-content: center;
             align-items: center;
         }
 
-        .btn-sign-up a{
-            font-size: 12px;
+        .btn-sign-up:hover, .nav-menu li a:hover, 
+        .nav-user li a:hover{
+            opacity: 0.8;
+            color: white;
+        }
+
+        .border-nav{
+            border-top: 1px solid hsl(0, 0%, 75%);
         }
     }
 
-    /* @media 260px - 425px */
-    @media (min-width: 260px) and (max-width: 425px){
+    /* @media 425px */
+    @media (max-width: 425px){
         .content-header{
             width: 78%;
         }
@@ -430,5 +592,31 @@
 
         .border-nav{
             border-top: 1px solid hsl(0, 0%, 75%);
+        }
+
+        .sect-brands{
+            margin: -1rem 0 0;
+        }
+
+        .cont-brands-image img{
+            width: 125%;
+            margin-left: 11rem;
+        }
+
+        .content-brands{
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-brands h1{
+            width: 90%;
+        }
+
+        .content-brands p{
+            width: 80%;
+            font-size: 14px;
+            font-weight: 500;
         }
     }
