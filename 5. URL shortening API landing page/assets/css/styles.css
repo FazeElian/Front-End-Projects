@@ -392,7 +392,7 @@
 
     .sect-boost h2{
         display: flex;
-        font-size: 30px;
+        font-size: 35px;
         color: white;
         margin: 0 0 1rem;
     }
@@ -410,6 +410,95 @@
         border: none;
         color: white;
     }
+
+/* Footer */
+.footer{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: hsl(260, 8%, 14%);
+    align-items: center;
+    justify-content: center;
+}
+
+    /* Content */
+    .content-footer{
+        display: flex;
+        height: 60%;
+        width: 80%;
+    }
+
+    .cont-left-footer{
+        display: flex;
+        width: 70%;
+        height: 100%;
+    }
+    
+        .cont-logo-footer,
+        .cont-lists-footer,
+        .cont-icons-footer{ 
+            height: 100%;
+        }
+
+        /* Container Logo */
+        .cont-logo-footer{
+            width: 45%;
+        }
+
+            .cont-logo-footer img{
+                height: 40px;
+            }
+
+        /* Container List */
+        .cont-lists-footer{
+            display: flex;
+            width: 55%;
+            justify-content: space-between;
+        }
+
+            .list-footer{
+                display: flex;
+                width: 33%;
+                height: 100%;
+                flex-direction: column;
+                list-style: none;
+            }
+
+            .list-footer,
+            .item-list-footer{
+                color: white;
+                text-decoration: none;
+            }
+
+            .item-list-footer{
+                font-weight: lighter;
+            }
+
+            .item-list-footer:hover{
+                color: hsl(180, 66%, 49%);
+                transition: .3s;
+            }
+
+            .first-item-list-footer{
+                margin-bottom: 1rem;
+                font-size: 18px;
+            }
+
+        /* Container Icons */
+        .cont-icons-footer{
+            display: flex;
+            width: 20%;
+            justify-content: flex-end;
+        }
+
+        .btn-icon-footer{
+            display: flex;
+            width: auto;
+            height: auto;
+            border: none;
+            background: transparent;
+            margin-right: 1.5rem;
+        }
 
 /* @media */
     /* @media 1440px */
@@ -449,6 +538,27 @@
 
         .line{
             height: 6px;
+        }
+
+        .footer{
+            height: 350px;
+        }
+
+        .cont-logo-footer img{
+            height: 35px;
+        }
+
+        .first-item-list-footer{
+            font-size: 16px;
+        }
+
+        .item-list-footer{
+            font-size: 14px;
+        }
+
+        .btn-icon-footer img{
+            width: 20px;
+            height: 20px;
         }
     }
 
@@ -629,6 +739,39 @@
             font-size: 12px;
             line-height: 1.2rem;
         }
+
+        .footer{
+            height: 300px;
+        }
+
+        .content-footer{
+            justify-content: space-between;
+        }
+
+        .cont-icons-footer{
+            width: 25%;
+        }
+
+        .cont-lists-footer{
+            width: 50%;
+        }
+
+        .first-item-list-footer{
+            font-size: 14px;
+        }
+
+        .item-list-footer{
+            font-size: 12px;
+        }
+
+        .btn-icon-footer{
+            margin-right: 1rem;
+        }
+
+        .btn-icon-footer img{
+            width: 17px;
+            height: 17px;
+        }
     }
 
     /* @media 768px */
@@ -787,6 +930,31 @@
     
         .content-statistics{
             margin: 8rem 0 0;
+        }
+
+        .footer{
+            height: 300px;
+        }
+
+        .content-footer{
+            flex-direction: column;
+            justify-content: space-between;
+            height: 65%;
+        }
+
+        .cont-logo-footer,
+        .cont-list-footer{
+            width: 50%;
+        }
+
+        .cont-left-footer,
+        .cont-icons-footer{
+            width: 100%;
+        }
+
+        .cont-icons-footer{
+            align-items: end;
+            justify-content: center;
         }
     }
 
@@ -991,5 +1159,42 @@
             width: 5px;
             min-height: 100px;
             margin: 0;
+        }
+
+        .footer{
+            height: auto;
+            padding: 3rem;
+        }
+
+        .cont-logo-footer{
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0 3rem;
+        }
+
+        .cont-logo-footer img{
+            display: flex;
+            margin: auto;
+        }
+
+        .cont-lists-footer{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .item-list-footer{
+            min-width: 400px;
+        }
+
+        .list-footer{
+            margin: 0 0 3rem;
+        }
+
+        .cont-left-footer{
+            flex-direction: column;
         }
     }
