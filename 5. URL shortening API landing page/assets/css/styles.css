@@ -377,6 +377,40 @@
             align-self: flex-end;
         }
 
+/* Boost section */
+.sect-boost{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-image: url("../img/bg-boost-desktop.svg");
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(255, 11%, 22%);
+    text-align: center;
+}
+
+    .sect-boost h2{
+        display: flex;
+        font-size: 30px;
+        color: white;
+        margin: 0 0 1rem;
+    }
+
+    .sect-boost button{
+        display: flex;
+        width: 150px;
+        height: 42px;
+        font-size: 14px;
+        background-color: hsl(180, 66%, 49%);
+        border-radius: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        color: white;
+    }
+
 /* @media */
     /* @media 1440px */
     @media (max-width: 1440px){
