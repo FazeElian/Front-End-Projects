@@ -411,6 +411,11 @@
         color: white;
     }
 
+    .sect-boost button:hover{
+        opacity: 0.8;
+        transition: .3s;
+    }
+
 /* Footer */
 .footer{
     display: flex;
